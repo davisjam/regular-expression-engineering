@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Regular Expression Engineering — James Davis, Purdue University</title>
+<title>Regular Expression Engineering &middot; Duality Lab</title>
 <meta name="description" content="What do small, heavily reused program fragments reveal about software engineering?">
+<meta name="author" content="James C. Davis">
 <link rel="canonical" href="https://davisjam.github.io/regular-expression-engineering/">
 <meta property="og:title" content="Regular Expression Engineering">
 <meta property="og:description" content="What do small, heavily reused program fragments reveal about software engineering?">
@@ -13,13 +14,21 @@
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<div class="wrap">
 <header class="masthead">
-  <div class="who"><a href="https://davisjam.github.io/">James Davis, PhD</a></div>
-  <div class="role">Assistant Professor, Elmore Family School of Electrical and Computer
-    Engineering, Purdue University</div>
-  <nav><a href="https://davisjam.github.io/">Home</a><a href="https://davisjam.github.io/research/" aria-current="page">Research</a><a href="https://davisjam.github.io/publications/">Publications</a><a href="https://davisjam.github.io/teaching/">Teaching</a><a href="https://davisjam.github.io/service/">Service</a><a href="https://davisjam.github.io/about/">About me</a></nav>
+  <div class="masthead__inner">
+    <a class="masthead__logo" href="https://davisjam.github.io/">
+      <img src="assets/logo-v2.png" alt="Duality Lab"></a>
+    <nav><a href="https://davisjam.github.io/">Home</a><span class="crumb"><a href="https://davisjam.github.io/research/">Research</a><span class="sep">&rsaquo;</span><span class="here">Regex</span></span><a href="https://davisjam.github.io/publications/">Publications</a><a href="https://davisjam.github.io/teaching/">Teaching</a><a href="https://davisjam.github.io/service/">Service</a><a href="https://davisjam.github.io/about/">About</a></nav>
+  </div>
 </header>
+<div class="shell">
+<aside class="rail">
+  <img class="avatar" src="assets/JamesDavis.jpg" alt="James Davis">
+  <p class="name">James Davis, PhD</p>
+  <p class="role">Assistant Professor,<br>ECE&#64;Purdue</p>
+  <ul><li><a href="mailto:davisjam@purdue.edu">Email</a></li><li><a href="https://scholar.google.com/citations?user=iVjLBTsAAAAJ">Google Scholar</a></li><li><a href="https://github.com/davisjam">GitHub</a></li><li><a href="https://davisjam.github.io/files/JamesDavis-CV.pdf">CV</a></li></ul>
+</aside>
+<main class="main">
 <h1>Regular Expression Engineering</h1>
 <p class="lede">What do small, heavily reused program fragments reveal about software engineering?</p>
 <p>A regular expression is a few characters long and is copied between languages, libraries, and projects with little thought. That makes it a useful subject: the same artifact is reused across many contexts, so its behaviour exposes assumptions that larger components hide.</p>
@@ -40,37 +49,40 @@
 <div class="ti">Regular Expression Denial of Service Induced by Backreferences</div>
 <div class="vn">arXiv</div>
 <div class="note">Backreferences reintroduce the vulnerability under different conditions, marking the current boundary of the security result.</div>
+<div class="ln"><a href="https://arxiv.org/pdf/2602.21459">Paper</a></div>
 </div>
 <div class="e">
 <div class="ti">Towards the Systematic Testing of Regular Expression Engines</div>
 <div class="vn">ICSE Journal Ahead Workshop (JAWs)</div>
 <div class="note">Regex engines themselves are largely untested against their own semantics; this proposes testing them systematically.</div>
+<div class="ln"><a href="https://arxiv.org/pdf/2603.00311">Paper</a></div>
 </div>
 <div class="yr">2025</div>
 <div class="e">
 <div class="ti">SoK: A Literature and Engineering Review of Regular Expression Denial of Service</div>
 <div class="vn">Proceedings of the 20th ACM ASIA Conference on Computer and Communications Security (AsiaCCS)</div>
 <div class="note">Consolidates a decade of ReDoS literature and engineering practice into one account of what is known and what is still open.</div>
-<div class="ln"><a href="https://zenodo.org/records/15515223">Artifact</a><a href="https://davisjam.medium.com/sok-a-literature-and-engineering-review-of-regular-expression-denial-of-service-redos-e6b10ef547c7">Blog</a></div>
+<div class="ln"><a href="https://zenodo.org/records/15515223">Artifact</a><a href="https://davisjam.medium.com/sok-a-literature-and-engineering-review-of-regular-expression-denial-of-service-redos-e6b10ef547c7">Blog</a><a href="https://arxiv.org/pdf/2406.11618">Paper</a></div>
 </div>
 <div class="e">
 <div class="ti">Is Reuse All You Need? A Systematic Comparison of Regular Expression Composition Strategies</div>
 <div class="vn">arXiv</div>
 <div class="note">Compares strategies for composing regexes, asking whether reuse is the right default at the level of the expression itself.</div>
+<div class="ln"><a href="https://arxiv.org/pdf/2503.20579">Paper</a></div>
 </div>
 <div class="yr">2023</div>
 <div class="e">
 <div class="ti">Improving Developers&#x27; Understanding of Regex Denial of Service Tools through Anti-Patterns and Fix Strategies</div>
 <div class="vn">Proceedings of the 44th IEEE Symposium on Security and Privacy (S&amp;P)</div>
 <div class="note">ReDoS tools exist but developers misread their output; this studies how to present findings so they can be acted on.</div>
-<div class="ln"><a href="https://doi.org/10.5281/zenodo.7419006">Artifact</a><a href="https://www.youtube.com/watch?v=It8QodA2zd8">Video</a></div>
+<div class="ln"><a href="https://doi.org/10.5281/zenodo.7419006">Artifact</a><a href="https://www.youtube.com/watch?v=It8QodA2zd8">Video</a><a href="https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1178&amp;context=ecepubs">Paper</a></div>
 </div>
 <div class="yr">2022</div>
 <div class="e">
 <div class="ti">Exploiting Input Sanitization for Regex Denial of Service</div>
 <div class="vn">Proceedings of the ACM/IEEE 44th International Conference on Software Engineering (ICSE)</div>
 <div class="note">Published sanitization logic tells an attacker which inputs reach the matcher, turning a usability feature into an exploitation aid.</div>
-<div class="ln"><a href="https://doi.org/10.5281/zenodo.5916441">Artifact</a><a href="https://youtu.be/6fCBGQhBf2I">Video</a><a href="https://davisjam.medium.com/exploiting-input-sanitization-for-regex-denial-of-service-2366ff8c7c42">Blog</a></div>
+<div class="ln"><a href="https://doi.org/10.5281/zenodo.5916441">Artifact</a><a href="https://youtu.be/6fCBGQhBf2I">Video</a><a href="https://davisjam.medium.com/exploiting-input-sanitization-for-regex-denial-of-service-2366ff8c7c42">Blog</a><a href="https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1179&amp;context=ecepubs">Paper</a></div>
 </div>
 <div class="yr">2021</div>
 <div class="e">
@@ -87,7 +99,7 @@
 <div class="ln"><a href="https://zenodo.org/record/3424961">Artifact</a><a href="https://www.youtube.com/watch?v=HQq6iXTjk1I">Video</a><a href="https://medium.com/@davisjam/testing-regex-generalizability-and-its-implications-ase19-63da1edadcdb">Blog</a></div>
 </div>
 <div class="e">
-<div class="ti">Regexes are Hard: Decision-making, Difficulties, and Risks in Programming Regular Expressions<span class="award">Best Paper</span></div>
+<div class="ti">Regexes are Hard: Decision-making, Difficulties, and Risks in Programming Regular Expressions<span class="award">best paper</span></div>
 <div class="vn">Proceedings of the 34th IEEE/ACM International Conference on Automated Software Engineering (ASE)</div>
 <div class="note">Studied what developers understand when they write regexes, and found the difficulties are in comprehension and decision-making, not syntax.</div>
 <div class="ln"><a href="https://zenodo.org/record/3424069">Artifact</a><a href="https://www.youtube.com/watch?v=EWIPCaGfvb0">Video</a><a href="https://medium.com/@davisjam/regexes-are-hard-e7933ae3122d">Blog</a></div>
@@ -105,7 +117,7 @@
 </div>
 <div class="yr">2018</div>
 <div class="e">
-<div class="ti">The Impact of Regular Expression Denial of Service (REDOS) in Practice: an Empirical Study at the Ecosystem Scale<span class="award">Best Paper</span></div>
+<div class="ti">The Impact of Regular Expression Denial of Service (REDOS) in Practice: an Empirical Study at the Ecosystem Scale<span class="award">best paper</span></div>
 <div class="vn">Proceedings of the 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)</div>
 <div class="note">Measured ReDoS across an ecosystem and found super-linear regexes widespread in deployed modules. The result that made the problem concrete.</div>
 <div class="ln"><a href="https://doi.org/10.5281/zenodo.1294300">Artifact</a><a href="https://medium.com/@davisjam/introduction-987fdc4c7b0">Blog</a></div>
@@ -133,12 +145,12 @@
 <dl class="support">
 <dt>US National Science Foundation</dt><dd><a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2135156">Collaborative Research: SaTC: CORE: Small: Improving Sanitization and Avoiding Denial of Service Through Correct and Safe Regexes</a> (#2135156)</dd>
 </dl>
+</main>
+</div>
 <footer class="site">
   <p><a href="https://davisjam.github.io/research/">&larr; All research</a></p>
-  <p><a href="https://davisjam.github.io/">James Davis</a> ·
-     <a href="https://davisjam.github.io/publications/">Publications</a> ·
-     <a href="https://davisjam.github.io/teaching/">Teaching</a></p>
+  <p>Duality Lab &middot; Elmore Family School of Electrical and Computer
+     Engineering &middot; Purdue University</p>
 </footer>
-</div>
 </body>
 </html>
